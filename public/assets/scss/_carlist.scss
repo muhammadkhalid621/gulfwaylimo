@@ -1,0 +1,107 @@
+.carousel.carousel-slider{
+    height: 400px;
+}
+.carousel .control-dots .dot{
+    background: #6e6e6e !important;
+}
+/* Mobile view - Show only one card */
+@media (max-width: 768px) {
+    .car-carousel {
+      .carousel .carousel-slider {
+        width: 100%; /* Set the width of each card to 100% */
+      }
+    }
+  }
+  
+  /* Tablet view - Show two cards */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .car-carousel {
+      .carousel .carousel-slider {
+        width: 50%; /* Set the width of each card to 50% */
+      }
+    }
+  }
+  
+  /* Desktop view - Show three cards */
+  @media (min-width: 1025px) {
+    .car-carousel {
+      .carousel .carousel-slider {
+        width: 33.33%; /* Set the width of each card to 33.33% */
+      }
+    }
+  }
+  
+.car-carousel {
+    padding: 20px;
+    background-color: rgba(110, 165, 217, 0.14);
+    border-radius: 20px;
+   
+    .fleet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:20px 20px 0px 20px;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: scroll;
+      .car-card {
+        
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $white;
+        margin: 10px;
+        width: 300px;
+       
+        img {
+          max-width: 100%;
+          height: auto;
+          margin:30px 0px;
+        }
+        .car-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .favorite-button {
+                position: absolute;
+                top: 15px;
+                right: 40px;
+                background-color: $white;
+                font-size: large;
+              }
+          .car-name {
+            font-weight: bold;
+          }
+          .car-type{
+                color: $grey-4;
+                left:0px;
+                text-align: left !important;
+          }
+        }
+        .passenger-capacity{
+            color: #90A3BF;
+            font-size: 14px !important;
+            
+        }
+        .car-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+          .price {
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .book-now {
+            background-color: $m-blue;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  

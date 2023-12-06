@@ -1,0 +1,33 @@
+/*----------------------------------------*/
+/*  08. CTA CSS START
+/*----------------------------------------*/
+.cta__area{
+    background-image: url('/assets/img/bg/bg-1.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 700px;
+flex-shrink: 0;
+}
+.cta{
+    &__bg{
+       background-image: url('/assets/img/bg/bg-1.png');
+    }
+    &__btn{
+        margin: 0 10px;
+        margin-bottom: 10px;
+        &.active{
+            color: $white;
+            background: $m-blue;
+            border-color: $m-blue;
+            @include box-shadow(0px 14px 20px 0px rgba(37, 17, 124, 0.16));
+        }
+        &:hover{
+            @include box-shadow(0px 14px 20px 0px rgba(37, 17, 124, 0.16));
+        }
+    }
+    &__inner{
+        @include border-radius(10px);
+        @include box-shadow(0px 50px 70px 0px rgba(87, 18, 159, 0.4));
+    }
+}
